@@ -11,9 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by aduser on 2/12/2018.
- */
+
 
 public class DataAdaptor extends RecyclerView.Adapter<DataAdaptor.MyViewHolder> {
     private List<DataClass> dataList;

@@ -3,11 +3,9 @@ package com.example.allanjacob.databindingrecycle;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
-import com.example.allanjacob.databindingrecycle.BR;
 
-/**
- * Created by aduser on 2/12/2018.
- */
+
+
 
 public class DataClass extends BaseObservable{
     private String name;
