@@ -25,7 +25,7 @@ public class DataClass extends BaseObservable{
 
     public void setName(String name) {
         this.name = name;
-        notifyPropertyChanged(BR.name);
+        notifyChange();
     }
     @Bindable
     public  String getPhone() {
@@ -34,7 +34,7 @@ public class DataClass extends BaseObservable{
 
     public void setPhone(String phone) {
         this.phone = phone;
-        notifyPropertyChanged(BR.phone);
+        notifyChange();
     }
 
 }

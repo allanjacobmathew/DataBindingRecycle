@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
 
     <data>
 
         <variable
-            name="obj"
+            name="items"
             type="com.example.allanjacob.databindingrecycle.DataClass"
             />
     </data>
@@ -32,17 +33,17 @@
             <TextView
                 android:id="@+id/name_id"
                 android:layout_width="wrap_content"
-                android:text="@{obj.name}"
+                android:text="@{items.name}"
                 android:textStyle="bold"
                 android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/phone_id"
                 android:layout_width="wrap_content"
-                android:text="@{obj.phone}"
                 android:layout_marginTop="10dp"
                 android:ellipsize="end"
                 android:maxLines="2"
+                bind:text="@{items.phone}"
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
